@@ -9,13 +9,13 @@ import java.util.Optional;
 public interface CocktailService {
     // adding cocktail
     @Transactional
-    void addCocktail(CocktailDto noteDto, Long userId);
+    void addCocktail(CocktailDto cocktailDto, Long userId);
 
     // deleting cocktail by ID
     @Transactional
     void deleteCocktailById(Long cocktailId);
 
-    //updating a note by ID
+    //updating a cocktail by ID
     @Transactional
     void updateCocktailById(CocktailDto cocktailDto);
 

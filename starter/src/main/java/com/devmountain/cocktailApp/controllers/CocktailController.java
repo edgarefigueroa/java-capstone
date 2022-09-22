@@ -15,7 +15,7 @@ public class CocktailController {
     private CocktailService cocktailService;
 
     @GetMapping("/user/{userId}")
-    public List<CocktailDto> getNotesByUser(@PathVariable Long userId){
+    public List<CocktailDto> getCocktailsByUser(@PathVariable Long userId){
         return cocktailService.getAllCocktailByUserId(userId);
     }
 
@@ -35,7 +35,7 @@ public class CocktailController {
     }
 
     @PutMapping
-    public void updateNote(@RequestBody CocktailDto noteDto){
-        cocktailService.updateCocktailById(noteDto);
+    public void updateCocktail(@RequestBody CocktailDto cocktailDto){
+        cocktailService.updateCocktailById(cocktailDto);
     }
 }
