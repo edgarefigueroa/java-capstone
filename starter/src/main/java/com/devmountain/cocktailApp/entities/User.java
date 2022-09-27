@@ -25,6 +25,10 @@ public class User {
     @JsonManagedReference
     private Set<Cocktail> cocktail = new HashSet<>();
 
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    @JsonManagedReference
+    private Set<Favorite> favorite = new HashSet<>();
+
     public Long getId() {
         return id;
     }

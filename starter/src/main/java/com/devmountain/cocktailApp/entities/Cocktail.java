@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "Cocktails")
@@ -25,6 +26,10 @@ public class Cocktail {
     @JsonBackReference
     private User user;
 
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "id")
+    private List<Favorite> favorites;
+
     public Long getId() {
         return id;
     }
@@ -39,6 +44,21 @@ public class Cocktail {
 
     public void setBody(String body) {
         this.body = body;
+    }
+
+    public List<Favorite> getFavorites()
+    {
+        return favorites;
+    }
+
+    public void setFavorites(List<Favorite> favorites)
+    {
+        this.favorites = favorites;
+    }
+
+    public void addFavorite(Favorite favorite)
+    {
+        this.favorites.add(favorite);
     }
 
 //    public Cocktail() {
