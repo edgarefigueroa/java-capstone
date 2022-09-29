@@ -91,9 +91,7 @@ const createCocktailCards = (array) => {
                     <div class="d-flex justify-content-between">
                         <button class="btn btn-danger" onclick="handleDelete(${obj.id})">Delete</button>
                         <button onclick="getCocktailById(${obj.id})" type="button" class="btn btn-primary"
-                        data-bs-toggle="modal" data-bs-target="#cocktail-edit-modal">
-                        Edit
-                        </button>
+                        data-bs-toggle="modal" data-bs-target="#cocktail-edit-modal">Edit</button>
                     </div>
                 </div>
             </div>

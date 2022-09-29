@@ -19,6 +19,11 @@ public class Cocktail {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  Long id;
 
+    @Column(name = "cocktail_name")
+    private String cocktailName;
+
+    @Column(name = "cocktail_type")
+    private String cocktailType;
     @Column(columnDefinition = "text")
     private String body;
 
@@ -36,6 +41,22 @@ public class Cocktail {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getCocktailName() {
+        return cocktailName;
+    }
+
+    public void setCocktailName(String cocktailName) {
+        this.cocktailName = cocktailName;
+    }
+
+    public String getCocktailType() {
+        return cocktailType;
+    }
+
+    public void setCocktailType(String cocktailType) {
+        this.cocktailType = cocktailType;
     }
 
     public String getBody() {
@@ -70,9 +91,16 @@ public class Cocktail {
     }
 
     public Cocktail(CocktailDto cocktailDto) {
+        if(cocktailDto.getCocktailName() != null){
+            this.cocktailName = cocktailDto.getCocktailName();
+        }
+        if (cocktailDto.getCocktailType() != null){
+            this.cocktailType = cocktailDto.getCocktailType();
+        }
         if (cocktailDto.getBody() != null) {
             this.body = cocktailDto.getBody();
         }
+
     }
 
 }
