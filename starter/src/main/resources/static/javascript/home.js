@@ -14,16 +14,27 @@ const baseUrl = "http://localhost:8080/api/v1/cocktails/"
 
 const handleSubmit = async (e) => {
     e.preventDefault()
+    let name = document.getElementById("cocktail-name")
+    let recipe = document.getElementById("cocktail-input")
+
     let bodyObj = {
-        body: document.getElementById("cocktail-input").value
+//        cocktailName: document.getElementById("cocktail-name").value
+//        body: document.getElementById("cocktail-input").value
+        cocktailName: name.value,
+        body: recipe.value
+
     }
     await addCocktail(bodyObj);
-    document.getElementById("cocktail-input").value = ''
+//    document.getElementById("cocktail-name").value = ''
+//    document.getElementById("cocktail-input").value = ''
+    name.value = ''
+    recipe.value = ''
 }
 
 async function addCocktail(obj) {
     const response = await fetch(`${baseUrl}user/${userId}`, {
         method: "POST",
+       // cocktailName: JSON.stringify(obj),
         body: JSON.stringify(obj),
         headers: headers
     })
@@ -87,6 +98,7 @@ const createCocktailCards = (array) => {
         cocktailCard.innerHTML = `
             <div class="card d-flex" style="width: 18rem; height: 18rem;">
                 <div class="card-body d-flex flex-column  justify-content-between" style="height: available">
+                    <p class="card-text">${obj.cocktailName}</p>
                     <p class="card-text">${obj.body}</p>
                     <div class="d-flex justify-content-between">
                         <button class="btn btn-danger" onclick="handleDelete(${obj.id})">Delete</button>
