@@ -19,6 +19,10 @@ public interface CocktailService {
     @Transactional
     void updateCocktailById(CocktailDto cocktailDto);
 
+    // get all cocktails
+    @Transactional
+    List<CocktailDto> getAllCocktails();
+
     // get cocktail by user id
     @Transactional
     List<CocktailDto> getAllCocktailByUserId(Long userId);

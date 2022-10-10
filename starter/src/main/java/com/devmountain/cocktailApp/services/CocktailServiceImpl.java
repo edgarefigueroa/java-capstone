@@ -48,6 +48,14 @@ public class CocktailServiceImpl implements CocktailService {
             cocktailRepository.saveAndFlush(cocktail);
         });
     }
+    // get all cocktails
+    @Override
+    public List<CocktailDto> getAllCocktails(){
+        List<Cocktail> cocktailList = cocktailRepository.findAll();
+        return cocktailList.stream().map(cocktail-> new CocktailDto(cocktail)).collect(Collectors.toList());
+
+    }
+
     // get cocktail by user id
     @Override
     @Transactional

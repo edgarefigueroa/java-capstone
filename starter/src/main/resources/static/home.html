@@ -14,12 +14,14 @@
 <body>
 
 <a class="btn btn-danger navbar-btn" href="./login.html" onclick="handleLogout()">Logout</a>
+<a class="btn btn-danger navbar-btn" href="./cocktails.html">Cocktails</a>
 
 <div class="container" id="home-container">
     <div id="cocktail-form-container">
         <form id="cocktail-form">
             <div class="form-group">
-                <textarea class="form-control" id="cocktail-name" placeholder="Add cocktail nametest..." rows="5"></textarea>
+                <textarea class="form-control" id="cocktail-name" placeholder="Add cocktail name..." rows="1"></textarea>
+                <textarea class="form-control" id="cocktail-type" placeholder="Add cocktail type..." rows="1"></textarea>
                 <textarea class="form-control" id="cocktail-input" placeholder="Add cocktail..." rows="5"></textarea>
 <!--                <input type='text' id="cocktail-name" placeholder="cocktail name" class="text-input"/>-->
 <!--                <input type='text' id="cocktail-input" placeholder='recipe' class="text-input"/>-->
@@ -36,11 +38,12 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="cocktail-edit-modal-title">Edit your cocktail</h5>
+                <h5 class="modal-title" id="cocktail-edit-modal-title">Edit your cocktail recipe</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body d-flex">
-<!--                <textarea class="form-control" rows="5" id="cocktail-name"></textarea>-->
+<!--                <textarea class="form-control" rows="1" id="cocktail-name-edit"></textarea>-->
+<!--                <textarea class="form-control" rows="1" id="cocktail-type-edit"></textarea>-->
                 <textarea class="form-control" rows="5" id="cocktail-body"></textarea>
             </div>
             <div class="modal-footer">

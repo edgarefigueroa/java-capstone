@@ -14,6 +14,11 @@ public class CocktailController {
     @Autowired
     private CocktailService cocktailService;
 
+    @GetMapping("/all/cocktails")
+    public List<CocktailDto> getAllCocktails(){
+        return cocktailService.getAllCocktails();
+    }
+
     @GetMapping("/user/{userId}")
     public List<CocktailDto> getCocktailsByUser(@PathVariable Long userId){
         return cocktailService.getAllCocktailByUserId(userId);
