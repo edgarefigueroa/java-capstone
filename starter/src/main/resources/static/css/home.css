@@ -13,6 +13,9 @@
   justify-content: center;
   }
 
+  h6{text-align:center
+  }
+
   /*#cocktail-form{
    width: 350px;
    height: 400px;
@@ -33,14 +36,15 @@
      border-radius: 10px;
    }
 
-  /* .form-group{
+ .form-group{
      width: 85%;
      height: 30px;
      border: none;
      border-bottom: 2px solid #232323;
      color: #232323;
      background-color: snow;
-   }*/
+   }
+
 aside{
  margin: 20px;
  }
@@ -75,7 +79,7 @@ aside{
      align-items: center;
    }
 
-   .book-cover-image {
+   .cocktail-cover-image {
      width: 300px;
      height: 300px;
      border-top-left-radius: 12px;

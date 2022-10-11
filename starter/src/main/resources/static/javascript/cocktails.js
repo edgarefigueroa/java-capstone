@@ -31,17 +31,14 @@ const createCocktailCards = (array) => {
     cocktailContainer.innerHTML = ''
     array.forEach(obj => {
         let cocktailCard = document.createElement("div")
-        cocktailCard.classList.add("m-2")
+        cocktailCard.classList.add("m-3")
         cocktailCard.innerHTML = `
             <div class="card d-flex" style="width: 18rem; height: 18rem;">
                 <div class="card-body d-flex flex-column  justify-content-between" style="height: available">
-                    <p class="card-text">${obj.cocktailName}</p>
-                    <p class="card-text">${obj.cocktailType}</p>
-                    <p class="card-text">${obj.body}</p>
-                    <div class="d-flex justify-content-between">
-                        <button class="btn btn-danger" onclick="invalid">Delete</button>
-                        <button onclick="invalid" type="button" class="btn btn-primary">Edit</button>
-                    </div>
+                    <p class="card-text">Name: ${obj.cocktailName}
+                    <br>Type: ${obj.cocktailType}
+                    <br>Recipe: ${obj.body}</p>
+
                 </div>
             </div>
         `
