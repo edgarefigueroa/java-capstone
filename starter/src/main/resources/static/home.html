@@ -11,13 +11,15 @@
     <link rel="stylesheet" href="./css/home.css" type="text/css">
     <title>Home</title>
 </head>
-<body>
-
+<body class="container">
+<main>
+<header>
 <a class="btn btn-danger navbar-btn" href="./login.html" onclick="handleLogout()">Logout</a>
 <a class="btn btn-danger navbar-btn" href="./cocktails.html">Cocktails</a>
-
-<div class="container" id="home-container">
-    <div id="cocktail-form-container">
+</header>
+<!--<div class="container" id="home-container">-->
+<!--    <div id="cocktail-form-container">-->
+        <aside>
         <form id="cocktail-form">
             <div class="form-group">
                 <textarea class="form-control" id="cocktail-name" placeholder="Add cocktail name..." rows="1"></textarea>
@@ -28,10 +30,12 @@
             </div>
             <button id="submit-button" type="submit" class="btn btn-primary mt-1">Submit</button>
         </form>
+        </aside>
 
         <div id="cocktail-container" class="container-fluid"></div>
-    </div>
-</div>
+</main>
+<!--    </div>-->
+<!--</div>-->
 
 <!-- Modal -->
 <div class="modal fade" id="cocktail-edit-modal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="cocktail-edit-modal-title" aria-hidden="true">

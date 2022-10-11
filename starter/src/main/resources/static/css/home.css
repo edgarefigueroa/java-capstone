@@ -1,0 +1,123 @@
+ * {
+    margin: 5;
+    padding: 5;
+    font-family: 'Segoe UI', Verdana, sans-serif;
+  }
+
+  body {
+    background-color: lightgrey;
+  }
+
+  main {
+  display: flex;
+  justify-content: center;
+  }
+
+  /*#cocktail-form{
+   width: 350px;
+   height: 400px;
+   background-color: rgb(107, 6, 107);
+   border-radius: 12px;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   margin: 30px;
+   }*/
+
+ button{
+     background: rgba(14, 12, 12, 0.944);
+     color: antiquewhite;
+     margin: 5px;
+     border-radius: 10px;
+   }
+
+  /* .form-group{
+     width: 85%;
+     height: 30px;
+     border: none;
+     border-bottom: 2px solid #232323;
+     color: #232323;
+     background-color: snow;
+   }*/
+aside{
+ margin: 20px;
+ }
+
+#cocktail-form{
+   width: 250px;
+   height: 300px;
+   background-color: grey;
+   border-radius: 12px;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   margin: 30px;
+   border: 1px solid;
+   padding: 10px;
+   box-shadow: 5px 10px;
+   }
+
+   #radio-container {
+     width: 100%;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+   }
+
+   #cocktail-container{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+   }
+
+   .book-cover-image {
+     width: 300px;
+     height: 300px;
+     border-top-left-radius: 12px;
+     border-top-right-radius: 12px;
+   }
+
+   /*.m-2 {
+     background-color: violet;
+     width: 300px;
+     margin: 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     border-radius: 12px;
+     border-top-left-radius: 15px;
+     border-top-right-radius: 15px;
+   }*/
+
+.m-2 {
+    background-color: lightslategray;
+    width: 300px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 5px 10px;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+}
+
+.container-fluid{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+ .card-body{
+   font-size: 18px;
+   margin: 5px 0;
+   }
