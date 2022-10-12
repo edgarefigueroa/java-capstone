@@ -4,8 +4,9 @@
     font-family: 'Segoe UI', Verdana, sans-serif;
   }
 
-  body {
-    background-color: lightgrey;
+ body{
+  background-image: url("../images/cocktails.png");
+  background-color: lightgrey;
   }
 
   main {
