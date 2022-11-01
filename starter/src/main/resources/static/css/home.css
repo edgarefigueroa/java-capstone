@@ -14,9 +14,13 @@
   justify-content: center;
   }
 
-  h6{text-align:center
+  h5{text-align:center
   }
 
+header{
+align-items: right;
+align-text: right;
+}
   /*#cocktail-form{
    width: 350px;
    height: 400px;
@@ -30,12 +34,12 @@
    margin: 30px;
    }*/
 
- button{
-     background: rgba(14, 12, 12, 0.944);
-     color: antiquewhite;
-     margin: 5px;
-     border-radius: 10px;
-   }
+btn{
+  background: rgba(14, 12, 12, 0.944);
+  color: antiquewhite;
+  margin: 5px;
+  border-radius: 10px;
+  }
 
  .form-group{
      width: 85%;
@@ -86,18 +90,6 @@ aside{
      border-top-left-radius: 12px;
      border-top-right-radius: 12px;
    }
-
-   /*.m-2 {
-     background-color: violet;
-     width: 300px;
-     margin: 20px;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     border-radius: 12px;
-     border-top-left-radius: 15px;
-     border-top-right-radius: 15px;
-   }*/
 
 .m-2 {
     background-color: lightslategray;
