@@ -1,8 +1,8 @@
-# Note App
-Note App that handles the CRUD operations and database to persist your data,
+# Recipe App
+Recipe App that handles the CRUD operations and database to persist your data,
 a server that will handle requests, RESTful API endpoints, a static HTML, CSS,
 JavaScript Frontend with simple login and registration functionality, and the ability to add,
-update and delete notes that are specific to the user who is currently logged in.
+update and delete recipe cards that are specific to the user who is currently logged in.
 
 ### Built
 * Java
@@ -10,7 +10,7 @@ update and delete notes that are specific to the user who is currently logged in
 * Spring
 * Maven
 ## Getting Started
-### Prerequisities
+### Prerequisite
 Heroku was used to host database
 
 ### Installation
@@ -19,7 +19,7 @@ Heroku was used to host database
 https://github.com/edgarefigueroa/java-capstone
 ```
 2. In scr>main>resources create application.properties file is where all the configuration takes place for configuring a Spring Boot Application. 
-We need to set a few properties here to connect to our external datasource, be sure to replace the Heroku Credentials with the actual credentials for your heroku project:
+We need to set a few properties here to connect to external datasource, be sure to replace the Heroku Credentials with your own credentials for your heroku new app:
 
 ```
 
